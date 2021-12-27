@@ -40,7 +40,7 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over")
         },200)
 
-        $("#level-title").text("GAME Over, Press any key to restart")
+        $("#level-title").text("GAME OVER, Click here to restart")
 
         startOver()
     }
@@ -80,7 +80,7 @@ function nextSequence() {
 }
 
 
-$(document).keypress(function () {
+$("#level-title").click(function () {
     if (!started) {
         $("#level-title").text("level " + level)
         nextSequence()
