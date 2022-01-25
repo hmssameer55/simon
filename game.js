@@ -40,7 +40,7 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over")
         },200)
 
-        $("#level-title").text("GAME OVER, Click here to restart")
+        $("#level-title").text("GAME OVER, Click _here_ to restart")
 
         startOver()
     }
